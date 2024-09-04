@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="#4CAF50"/> <!-- 버튼 배경색: 초록색 -->
+<corners android:radius="16dp"/> <!-- 둥근 모서리: 16dp -->
+</shape>

@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.Treee" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#388E3C</item>
+        <item name="colorAccent">#FF4081</item>
+        <!-- 만약 버튼 스타일이 지정되어 있다면 -->
+        <item name="buttonStyle">@style/CustomButton</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">#4CAF50</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

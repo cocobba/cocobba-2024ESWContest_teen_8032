@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 이미지 컨테이너 -->
+    <LinearLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+    </LinearLayout>
+
+    <!-- 전송 버튼 -->
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp" />
+
+    <!-- 하단 고정된 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4CAF50"
+        android:layout_gravity="bottom"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Camera button" />
+
+        <ImageButton
+            android:id="@+id/leaf"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/leaf"
+            android:layout_marginLeft="120dp"
+            android:contentDescription="Leaf button" />
+
+        <ImageButton
+            android:id="@+id/map"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/map"
+            android:layout_marginLeft="120dp"
+            android:contentDescription="Map button" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Map with Markers</title>
+    <style>
+        /* 기본 지도 크기 설정 */
+        #mapid {
+            width: 100%;  /* 기본 가로 크기 100% */
+            height: 800px;  /* 기본 높이 600px */
+        }
+
+        /* 모바일 화면에 대한 미디어 쿼리 */
+        @media (max-width: 768px) {
+            #mapid {
+                height: 500px;  /* 모바일에서는 높이 400px로 설정 */
+            }
+        }
+
+        /* 작은 모바일 화면에 대한 미디어 쿼리 */
+        @media (max-width: 480px) {
+            #mapid {
+                height: 400px;  /* 작은 모바일 화면에서는 높이 300px로 설정 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Seoul Map with Markers</h1>
+
+    <!-- 체크박스 추가 -->
+    <form id="filter-form" action="/" method="get">
+        <label><input type="checkbox" name="filter" value="loco" 
+            {% if 'loco' in selected_filters %} checked {% endif %}> 내것만 보기</label>
+        <button type="submit">Apply Filters</button>
+    </form>
+
+    <!-- Folium 지도 HTML 삽입 -->
+    <div id="mapid">
+        {{ map_html|safe }}
+    </div>
+
+    <!-- 박스 아래에 글씨 추가 -->
+    <div id="info-box">
+        <ul>
+        {% for info in additional_info_list %}
+            <li>{{ info }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

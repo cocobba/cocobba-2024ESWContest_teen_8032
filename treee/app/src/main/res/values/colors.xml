@@ -1,0 +1,11 @@
+<resources>
+    <color name="colorPrimary">#FFFFFF</color> <!-- 기본 흰색 설정 -->
+    <color name="colorPrimaryVariant">#FFFFFF</color>
+    <color name="colorOnPrimary">#000000</color> <!-- 흰색에 대비되는 색상 -->
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="colorSecondaryVariant">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color> <!-- 강조 색상도 흰색으로 설정 -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorButtonBackground">#4CAF50</color> <!-- 초록색 배경 -->
+</resources>

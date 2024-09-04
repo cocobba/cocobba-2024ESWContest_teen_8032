@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/treeee"
+    android:id="@+id/main_layout">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:contentDescription="App Logo"
+            android:src="@drawable/teee_icorn" />
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="#00000000"
+            android:text="TreeApp"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/button_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="190dp"
+            android:background="#00000000"
+            android:contentDescription="Profile"
+            android:scaleType="centerInside"
+            android:src="@drawable/profile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/top_layout">
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:textColor="#FF0000"
+            android:padding="12dp"
+            android:background="#F5F5DC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#00000000">
+
+        <Button
+            android:id="@+id/button_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나무 사진 찍기"
+            android:textColor="#ffffff"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/button_view_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="지도에서 보기"
+            android:textColor="#ffffff"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button" />
+
+    </LinearLayout>
+
+    <!-- 새로 추가된 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4CAF50"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Leaf button, performs a specific action" />
+
+        <ImageButton
+            android:id="@+id/leaf"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/leaf"
+            android:layout_marginLeft="120dp"
+            android:contentDescription="Leaf button, performs a specific action" />
+
+        <ImageButton
+            android:id="@+id/map"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/map"
+            android:layout_marginLeft="120dp"
+            android:contentDescription="Leaf button, performs a specific action" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
